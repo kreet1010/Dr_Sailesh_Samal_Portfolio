@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  height: 115vh;
+  background: #f0f0f0;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.black-div, .white-div {
+  flex: 1;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.black-div {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white-div {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white-div-content h1{
+  color: rgb(19, 19, 19);
+  
+}
+.white-div-content h3{
+  color: rgb(136, 136, 136);
+  text-decoration: underline;
+}
+
+.black-div-content{
+  border-radius: 20;
+}
+.content-div {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%) scale(0);
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.5s ease;
+  z-index: 10;
+}
+
+.content-div.visible {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.scrolled .black-div {
+  transform: translateX(100%);
+}
+
+.scrolled .white-div {
+  transform: translateX(-100%);
+}
+
+
+@media(max-width:900px){
+  .container{
+    display: inline-block;
+  }
+  .black-div, .white-div {
+    flex: 1;
+    height:50%;
+    transition: transform 0.5s ease;
+  }
+}
