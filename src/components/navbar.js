@@ -14,7 +14,7 @@ const Navbar = () => {
       <i className="dropboxMenu" id="menu-icon" onClick={toggleMenu}>☰</i>
 
       <ul id="nav-links" className={isMenuOpen ? 'show' : ''}>
-        <li className="list"><a href="#aboutus">About</a></li>
+        <li className="list"><a href="#about">Home</a></li>
         <li className="list"><a href="#worksample">work</a></li>
         <li className="list"><a href="#packages">Packages</a></li>
         <li className="list"><a href="#contactsection">Contact</a></li>

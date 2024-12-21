@@ -1,9 +1,12 @@
 body {
   margin: 0;
   overflow-x: hidden;
-  font-family: Arial, sans-serif;
-  height: 115vh;
-  background: #f0f0f0;
+  font-family: "Arial, sans-serif";
+  height:200vh;
+  background-image: url('./assets/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .container {
@@ -31,41 +34,82 @@ body {
 .white-div {
   background: white;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
 }
-
-.white-div-content h1{
+.white-div-content{
+  padding:20px
+}
+.welcome{
+  font-size: 50px;
   color: rgb(19, 19, 19);
   
 }
-.white-div-content h3{
+.name-txt{
+  font-size: 40px;
+  color: rgb(61, 61, 61);
+  
+}
+.desigs{
   color: rgb(136, 136, 136);
   text-decoration: underline;
+  font-size: 25px;
 }
 
-.black-div-content{
-  border-radius: 20;
+.black-div-content img{
+  max-height: 400px;
+  border-radius: 50px;
 }
-.content-div {
+.behind-the-scene {
   position: absolute;
-  top: 50%;
-  left: 50%; 
+  top:50%;
+  left:50%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
   transform: translate(-50%, -50%) scale(0);
-  width: 80%;
-  max-width: 600px;
+  width: 100%;
+  color: rgba(245, 245, 245, 0.658);
   padding: 20px;
-  background: #fff;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
   transition: transform 0.5s ease;
   z-index: 10;
 }
-
-.content-div.visible {
+.layer-top{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.behind-the-scene.visible {
   transform: translate(-50%, -50%) scale(1);
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50px;
 }
 
+.about{
+  background-color: rgba(255, 255, 255, 0.11);
+  padding: 10px;
+  padding-left: 20px;
+  text-align: left;
+  border-radius: 50px;
+  max-width: 950px;
+  max-height:500px;
+  font-size: 22px;
+}
+
+.image-container img{
+  background-color: rgb(255, 255, 255, 0.11);
+  max-width: 450px;
+  max-height: 400px;
+  background-color: rgb(255, 255, 255, 0.11);  
+  border-radius: 50px;
+  padding:20px;
+}
 .scrolled .black-div {
   transform: translateX(100%);
 }
@@ -74,7 +118,19 @@ body {
   transform: translateX(-100%);
 }
 
-
+.scroll_txt{
+  text-align: end;
+}
+.layer-btm{
+  display: flex;
+  justify-content: space-evenly;
+}
+.card1, .card2, .card3{
+  min-height:400px;
+  min-width:500px;
+  border-radius: 50px;
+  background-color: rgba(245, 245, 220, 0.11);
+}
 @media(max-width:900px){
   .container{
     display: inline-block;
@@ -83,5 +139,11 @@ body {
     flex: 1;
     height:50%;
     transition: transform 0.5s ease;
+  }
+  .white-div-content h3{
+    font-size: 15px;
+  }
+  .white-div-content{
+    gap: 10px;
   }
 }

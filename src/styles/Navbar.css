@@ -2,7 +2,7 @@
     --bg-primary: #fff;
     --bg-secondary: rgb(241, 190, 169);
     --txt-clr: black;
-    --main-clr: rgb(78, 78, 78);
+    --main-clr: rgb(0, 0, 0);
   }
   
   *,
@@ -26,7 +26,7 @@
     top: 0;
     left: 0;
     padding: 1rem 5%;
-    background: white;
+    background: rgba(255, 255, 255, 0.247);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -64,7 +64,7 @@
   }
   
   .navbar ul a {
-    color: var(--txt-clr);
+    color: whitesmoke;
     text-transform: uppercase;
     text-decoration: none;
     border-bottom: 3px solid transparent;
@@ -72,9 +72,9 @@
   }
   
   .navbar ul a:hover {
-    color: var(--main-clr);
+    color:rgb(170, 170, 170);
     letter-spacing: 2px;
-    border-bottom: 3px solid var(--main-clr);
+    border-bottom: 3px solid rgb(170, 170, 170);
   }
   
   .getsession {
@@ -120,7 +120,7 @@
   
     .name {
       width: 50%;
-      font-size: 200%;
+      font-size: 110%;
       justify-content: flex-start;
     }
   
