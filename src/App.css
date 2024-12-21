@@ -3,7 +3,7 @@ body {
   overflow-x: hidden;
   font-family: "Arial, sans-serif";
   height:200vh;
-  background-image: url('./assets/bg.png');
+  background: linear-gradient(#6bdcff,#4CC9F0,#4895EF,#4361EE,#2B35AF,#12086F);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -32,7 +32,7 @@ body {
 }
 
 .white-div {
-  background: black;
+  background: #4895EF;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -41,12 +41,12 @@ body {
 
 .welcome{
   font-size: 80px;
-  color: rgb(190, 190, 190);
+  color: rgb(0, 0, 0);
   margin-bottom: 20px;
 }
 .name-txt{
   font-size: 55px;
-  color: rgb(138, 138, 138);
+  color: rgb(48, 48, 48);
 }
 
 .scroll_txt{
@@ -57,7 +57,7 @@ body {
   font-size: 25px;
 }
 .desigs{
-  color: rgb(117, 117, 117);
+  color: rgb(73, 73, 73);
   font-size: 20px;
 }
 
@@ -100,13 +100,13 @@ body {
 }
 
 .about{
-  background-color: rgba(255, 255, 255, 0.11);
+  background-color: rgba(255, 255, 255, 0);
   padding: 10px;
   padding-left: 20px;
   text-align: left;
   border-radius: 50px;
   max-width: 950px;
-  max-height:500px;
+  max-height:400px;
   font-size: 22px;
 }
 
@@ -134,11 +134,57 @@ body {
   justify-content: space-evenly;
 }
 .card1, .card2, .card3{
-  min-height:400px;
-  min-width:500px;
+  min-height:300px;
+  min-width:350px;
   border-radius: 50px;
   background-color: rgba(245, 245, 220, 0.11);
 }
+.card1{
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  padding: 2%;
+}
+.journey-button{
+  background: white;
+  color: black;
+  text-transform: uppercase ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-stretch: expanded;
+  border-radius: 50px;
+  min-width:80%;
+  min-height: 25%;
+  transition: 0.5s ease;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+.journey-button:hover{
+  background: #ffe045;
+  min-width: 90%;
+  letter-spacing: 2px;
+}
+
+@media(max-width:1250px){
+  .welcome{
+    font-size: 70px;
+  }
+  .name-txt{
+    font-size: 45px;
+  }
+  .desigs{
+    font-size:18px;
+  }
+}
+
+@media(max-width:1000px){
+  .name-txt{
+    font-size: 40px;
+  }
+} 
+
 @media(max-width:900px){
   .container{
     display: inline-block;
@@ -153,5 +199,17 @@ body {
   }
   .white-div-content{
     gap: 10px;
+  }
+}
+
+@media(max-width:440px){
+  .name-txt{
+    font-size: 35px;
+  } 
+}
+
+@media(max-height:875px){
+  .black-div-content img{
+    max-height: 350px;
   }
 }

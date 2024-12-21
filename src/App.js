@@ -49,7 +49,9 @@ const ParallaxScrollEffect = () => {
             <div className="image-container"><img src={dr_samal}></img></div>
           </div>
           <div className="layer-btm">
-            <div className="card1"></div>
+            <div className="card1">
+              <div className="journey-button">View Journey</div>
+            </div>
             <div className="card2"></div>
             <div className="card3"></div>
           </div>
