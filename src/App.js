@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import React Router
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import dr_samal from './assets/dr.sailesh_kumar_samal.jpg';
+import ArrowDropDownCircleRoundedIcon from '@mui/icons-material/ArrowDropDownCircleRounded';
 import './App.css';
 import Navbar from './components/navbar.js';
 
@@ -38,7 +39,7 @@ const ParallaxScrollEffect = () => {
             <h3>Adjunct fac./Prof - IIT Ropar</h3>
           </div>
         </div>
-        <div className="scroll_txt">⏬Scroll</div>
+        <div className="scroll_txt">Scroll</div>
       </div>
       <div className="black-div">
         <div className="black-div-content">
@@ -59,10 +60,16 @@ const ParallaxScrollEffect = () => {
         </div>
         <div className="layer-btm">
           <div className="card1">
-            <div className="journey-button">View Journey</div>
+            
           </div>
           <div className="card2"></div>
-          <div className="card3"></div>
+          <div className="card3">
+            <div className="work">
+              <h2>Lorem</h2>
+              <p>lorem ipsum</p>
+            </div>
+            <div className="journey-button">View Journey</div>
+          </div>
         </div>
       </div>
     </div>
@@ -71,7 +78,7 @@ const ParallaxScrollEffect = () => {
 
 const App = () => {
   return (
-    <Router> {/* Wrap Router around your entire app */}
+    <Router> {}
       <Navbar />
       <Routes>
         <Route path="/" element={<ParallaxScrollEffect />} />
