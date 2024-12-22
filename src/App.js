@@ -5,7 +5,7 @@ import './App.css';
 import Navbar from './components/navbar.js';
 
 import AboutMe from './pages/AboutMe';
-import Contact from './pages/Contact';
+import Contact from './pages/Contact/Contact';
 import Portfolio from './pages/Portfolio';
 import Skills from './pages/Skills';
 
