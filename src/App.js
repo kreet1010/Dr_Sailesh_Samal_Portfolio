@@ -6,9 +6,9 @@ import './App.css';
 import Navbar from './components/navbar.js';
 
 import AboutMe from './pages/AboutMe';
-import Contact from './pages/Contact';
-import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact/Contact';
 import Skills from './pages/Skills';
+import Projects from './pages/Projects/Projects.js';
 
 const ParallaxScrollEffect = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -83,7 +83,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<ParallaxScrollEffect />} />
         <Route path="/work" element={<Skills />} />
-        <Route path="/packages" element={<Portfolio />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<AboutMe />} />
       </Routes>
