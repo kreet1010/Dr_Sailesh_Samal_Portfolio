@@ -17,7 +17,7 @@ const Navbar = () => {
       <ul id="nav-links" className={isMenuOpen ? 'show' : ''}>
         <li className="list"><Link to="/">Home</Link></li>
         <li className="list"><Link to="/work">Journey</Link></li>
-        <li className="list"><Link to="/packages">Projects</Link></li>
+        <li className="list"><Link to="/projects">Projects</Link></li>
         <li className="list"><Link to="/contact">Contact</Link></li>
       </ul>
     </nav>
