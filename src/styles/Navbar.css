@@ -31,10 +31,10 @@
     justify-content: space-around;
     align-items: center;
     z-index: 11;
+    backdrop-filter: blur(10px);
   }
   
   .name {
-    font-family: 'montserrat', cursive;
     font-size: 152%;
     color: var(--txt-clr);
     display: flex;
