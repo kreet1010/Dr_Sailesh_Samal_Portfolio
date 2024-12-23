@@ -1,0 +1,114 @@
+
+  .app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .timeline-container {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.274);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow-y: auto;
+    height: 100vh;
+    margin-top: 10%
+  }
+  
+  .timeline-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgba(68, 68, 68, 0.925);
+  }
+  
+  .timeline {
+    position: relative;
+    padding: 20px 0;
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 2px solid #007BFF;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 20px;
+    width: 12px;
+    height: 12px;
+    background-color: #007BFF;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  
+  .timeline-year {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #007BFF;
+  }
+  
+  .timeline-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .timeline-details {
+    list-style: none;
+    padding-left: 20px;
+    margin: 10px 0 0;
+    color: #666;
+  }
+  
+  .timeline-item:nth-child(odd) {
+    background: #f1f9ff;
+  }
+  
+  .timeline-item:nth-child(even) {
+    background: #eef6fc;
+  }
+  
+  @media (max-width: 600px) {
+    .timeline-container {
+      width: 95%;
+    }
+  
+    .timeline-title {
+      font-size: 1.5rem;
+    }
+  
+    .timeline-year {
+      font-size: 1rem;
+    }
+  
+    .timeline-description {
+      font-size: 0.9rem;
+    }
+  }
+  
+  .timeline-container {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  }
+  
+  .timeline-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  

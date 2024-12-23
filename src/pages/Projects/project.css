@@ -1,0 +1,23 @@
+
+.projects-container{
+    margin-top: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
+    align-items: center;
+}
+
+.projects-container h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+@media(max-width:680px){
+    .projects-container{
+        margin-top: 15%;
+    }
+}
+@media(max-width:435px){
+    .projects-container{
+        margin-top: 20%;
+    }
+}

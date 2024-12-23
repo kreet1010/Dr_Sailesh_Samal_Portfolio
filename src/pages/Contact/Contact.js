@@ -1,11 +1,12 @@
 import React from "react";
 import "./style.css";
-
+import Navbar from "../../components/navbar";
 const Contact = () => {
   return (
     <div className="contact-container">
+      <Navbar />
       <h1>Contact Us</h1>
-      <p>Any question or remarks? Just write me a message!</p>
+      <p>Any question or remarks? Just write a message to Dr. Sailesh!</p>
       <div className="contact-content">
         {/* Left section: Contact Information */}
         <div className="contact-info">

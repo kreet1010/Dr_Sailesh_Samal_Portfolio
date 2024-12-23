@@ -139,6 +139,8 @@
       padding-right: 4%;
       padding-top: 3%;
       height: auto;
+      background:linear-gradient(whitesmoke,#6bdcff,#4895EF, #6bdcff,whitesmoke);
+      backdrop-filter: blur(20px);
     }
   
     .getsession {
@@ -192,5 +194,13 @@
     .signup-button {
       width: 100%;
       margin-bottom: 10px;
+    }
+  }
+
+  @media(max-height: 755px){
+    .navbar{
+      height: 20px;
+      padding-top: 25px;
+      padding-left: 20px;
     }
   }
