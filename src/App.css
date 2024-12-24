@@ -5,7 +5,7 @@
 body {
   margin: 0;
   overflow-x: hidden;
-  font-family: "Arial, sans-serif";
+  font-family: 'Inter', sans-serif;
   height:200vh;
   background: linear-gradient(#6bdcff,#4CC9F0,#4895EF,#4361EE,#2B35AF,#12086F);
   background-size: cover;
@@ -48,11 +48,13 @@ body::-webkit-scrollbar {
 
 .welcome{
   font-size: 80px;
+  font-family: 'Inter', sans-serif;
   color: rgb(0, 0, 0);
   margin-bottom: 20px;
 }
 .name-txt{
   font-size: 55px;
+  font-family: 'Inter', sans-serif;
   color: rgb(48, 48, 48);
 }
 
@@ -119,6 +121,7 @@ body::-webkit-scrollbar {
   text-align: left;
   max-width: 950px;
   font-size: 150%;
+  font-family: 'Inter', sans-serif;
 }
 .image-container{
   height:100%;
@@ -184,11 +187,11 @@ body::-webkit-scrollbar {
 }
 .total-citations{
   font-size: 900%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 .card-desc{
   font-size: 250%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 .card3{
   flex-grow: 1;
@@ -249,6 +252,7 @@ body::-webkit-scrollbar {
 @media(max-width:1000px){
   .name-txt{
     font-size: 40px;
+    font-family: 'Inter', sans-serif;
   }
   .image-container{
     justify-content: center;

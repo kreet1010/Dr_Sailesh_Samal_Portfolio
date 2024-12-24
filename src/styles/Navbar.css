@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;font-family: 'Inter', sans-serif;
   }
   
   .navbar {
@@ -29,6 +29,7 @@
   
   .name {
     font-size: 152%;
+    font-family: 'Inter', sans-serif;
     color: var(--txt-clr);
     display: flex;
     font-weight: 600;
@@ -45,6 +46,7 @@
   
   .navbar ul {
     font-size: 140%;
+    font-family: 'Inter', sans-serif;
     width: 25%;
     display: flex;
     flex-direction: row;
@@ -89,6 +91,7 @@
     width: 45%;
     transition: 0.1s ease;
     font-weight: 500;
+    font-family: 'Inter', sans-serif;
     max-height: 5px;
   }
   
