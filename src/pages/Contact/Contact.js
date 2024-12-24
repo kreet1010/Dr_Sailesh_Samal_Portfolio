@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <Navbar />
-      <h1>Contact Us</h1>
+      <h1>Contact Me</h1>
       <p>Any question or remarks? Just write a message to Dr. Sailesh!</p>
       <div className="contact-content">
         {/* Left section: Contact Information */}
