@@ -9,7 +9,7 @@
 .projects-container h1{
     text-transform: uppercase;
     text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 @media(max-width:680px){
     .projects-container{
