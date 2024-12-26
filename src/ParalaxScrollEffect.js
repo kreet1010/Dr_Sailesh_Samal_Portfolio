@@ -61,7 +61,8 @@ const ParallaxScrollEffect = () => {
         </div>
         <div className="layer-btm">
           <div className="card1">
-            <img src={analysisRprt}></img>
+          <div className="total-citations"> 47 </div>
+            <div className="card-desc">Published Researches</div>
           </div>
           <div className="card2">
             <div className="total-citations"> 406 </div>

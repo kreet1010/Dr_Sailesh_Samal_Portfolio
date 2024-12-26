@@ -18,6 +18,12 @@ const Projects = () => {
       image: project2Image,
       githubLink: "https://github.com/username/ecommerce-app",
     },
+    {
+      title: "IJKF",
+      description: " desc.",
+      image: project2Image,
+      githubLink: "https://github.com/username/ecommerce-app",
+    },
   ];
 
   return (
