@@ -1,13 +1,19 @@
 .project-card {
     display: flex;
+    flex-direction: column;
+    min-width:400px;
+    height:350px;
     align-items: center;
-    justify-content: space-between;
-    background: #ffffff;
+    justify-content: center;
+    background: #ffffff4d;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin: 20px 0;
     padding: 20px;
     transition: transform 0.3s ease;
+    flex-basis: 1px;
+    cursor: pointer;
+    text-align: center;
   }
   
   .project-card:hover {
@@ -16,7 +22,6 @@
   
   .card-content {
     flex: 1;
-    margin-right: 20px;
   }
   
   .card-content h2 {
@@ -29,14 +34,14 @@
     font-size: 16px;
     font-family: 'Inter', sans-serif;
     margin-bottom: 15px;
-    color: #555;
+    color: rgba(0, 0, 0, 0.664);
   }
   
   .card-content a {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: #007bff;
+    color: rgba(0, 0, 54);
     font-weight: bold;
   }
   
