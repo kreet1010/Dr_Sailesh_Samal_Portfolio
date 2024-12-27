@@ -11,8 +11,21 @@
 .search-bar{
     background-color: rgba(224, 224, 224, 0.123);
     border: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .search-bar:active{
     transform: translateY(-5%);
     border: none;
+}
+.search{
+    width: 60%;
+    
+}
+.search-bar input{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
