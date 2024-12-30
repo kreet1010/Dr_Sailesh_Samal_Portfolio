@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser"; //Powers 200 mails per month on free plan
 import "./style.css";
 import Navbar from "../../components/navbar";
 
@@ -53,8 +53,8 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <Navbar />
-      <h1>Contact Me</h1>
-      <p>Any question or remarks? Just write a message to Dr. Sailesh!</p>
+      <h1>Contact Dr. Shailesh</h1>
+      <p>Any question or remarks? Just write a message!</p>
       <div className="contact-content">
         <div className="contact-info">
           <h2>Contact Information</h2>
