@@ -112,14 +112,14 @@ const News = () => {
         <div className="search">
           <input
             type="text"
-            placeholder="Search article by title..."
+            placeholder="Search article"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
-        <div className="sort-by">
+        <div className="sort-by-section">
+          Sort By:
           <div className="sort-by">
-            <label htmlFor="sort">Sort By:</label>
             <select
               id="sort"
               value={sortOption}

@@ -30,7 +30,7 @@
   .name {
     font-size: 152%;
     font-family: 'Inter', sans-serif;
-    color: var(--txt-clr);
+    color: rgb(0, 0, 54);
     display: flex;
     font-weight: 600;
     cursor: pointer;
@@ -59,9 +59,10 @@
   }
   
   .navbar ul a {
-    color: rgb(2, 2, 2);
+    color: rgb(0, 0, 54);
     text-transform: uppercase;
     text-decoration: none;
+    font-weight: 300;
     border-bottom: 3px solid transparent;
     transition: 0.5s ease;
   }
@@ -126,7 +127,7 @@
       left: 0;
       height: 0;
       overflow: hidden;
-      gap: .5rem;
+      gap: 1rem;
       flex-direction: column;
       transition: 0.5s ease;
       width: 100%;
@@ -142,8 +143,8 @@
       padding-right: 4%;
       padding-top: 3%;
       height: auto;
-      background:linear-gradient(whitesmoke,#6bdcff,#4895EF, #6bdcff,whitesmoke);
-      backdrop-filter: blur(20px);
+      background:linear-gradient(whitesmoke,whitesmoke);
+      backdrop-filter: blur(0px);
     }
   
     .getsession {
