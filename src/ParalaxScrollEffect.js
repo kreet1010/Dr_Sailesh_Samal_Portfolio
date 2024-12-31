@@ -12,7 +12,7 @@ const ParallaxScrollEffect = () => {
       <div className="parallax1">
         <div className="filter">
           <div className="intro">
-            <h1>Dr. Sailesh Kumar Samal</h1>
+            <h1>Dr. Shailesh Kumar Samal</h1>
             <h3>Co-Founder & CEO, Inflanova AB</h3>
             <h3>Senior Researcher Karolinska Institutet</h3>
             <h3>Adjunct fac./Prof - IIT Ropar</h3>

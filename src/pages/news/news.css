@@ -13,19 +13,32 @@
     border: none;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    
 }
-.search-bar:active{
+.search::after{
     transform: translateY(-5%);
     border: none;
 }
 .search{
     width: 60%;
-    
+    transition: 0.5 ease;
 }
 .search-bar input{
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+
+.sort-by-section{
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+    align-items: center;
+    width:40%
+}
+.sort-by select{
+    height: 30px;
+    width: 120px;
 }
