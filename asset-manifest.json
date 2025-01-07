@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Dr_Sailesh_Samal_Portfolio/static/css/main.6c4558ae.css",
-    "main.js": "/Dr_Sailesh_Samal_Portfolio/static/js/main.d1b5259f.js",
-    "static/js/488.9561f9b8.chunk.js": "/Dr_Sailesh_Samal_Portfolio/static/js/488.9561f9b8.chunk.js",
-    "static/media/medicine.jpeg": "/Dr_Sailesh_Samal_Portfolio/static/media/medicine.243e39be3c4582c3c341.jpeg",
-    "static/media/paralaxbg.jpg": "/Dr_Sailesh_Samal_Portfolio/static/media/paralaxbg.9be86c6748a05c4bf46a.jpg",
-    "static/media/dr.sailesh_kumar_samal-removebg-preview.png": "/Dr_Sailesh_Samal_Portfolio/static/media/dr.sailesh_kumar_samal-removebg-preview.02e49b9206ee64139bb8.png",
-    "static/media/crop.jpg": "/Dr_Sailesh_Samal_Portfolio/static/media/crop.c7a1f777334f8fc25dc1.jpg",
-    "static/media/disease.jpeg": "/Dr_Sailesh_Samal_Portfolio/static/media/disease.65f3a2dbdcbd4edc7f09.jpeg",
-    "index.html": "/Dr_Sailesh_Samal_Portfolio/index.html",
-    "main.6c4558ae.css.map": "/Dr_Sailesh_Samal_Portfolio/static/css/main.6c4558ae.css.map",
-    "main.d1b5259f.js.map": "/Dr_Sailesh_Samal_Portfolio/static/js/main.d1b5259f.js.map",
-    "488.9561f9b8.chunk.js.map": "/Dr_Sailesh_Samal_Portfolio/static/js/488.9561f9b8.chunk.js.map"
+    "main.css": "/Dr_Shailesh_Samal_Portfolio/static/css/main.de0642ee.css",
+    "main.js": "/Dr_Shailesh_Samal_Portfolio/static/js/main.bcdd0cf1.js",
+    "static/js/488.9561f9b8.chunk.js": "/Dr_Shailesh_Samal_Portfolio/static/js/488.9561f9b8.chunk.js",
+    "static/media/medicine.jpeg": "/Dr_Shailesh_Samal_Portfolio/static/media/medicine.243e39be3c4582c3c341.jpeg",
+    "static/media/paralaxbg.jpg": "/Dr_Shailesh_Samal_Portfolio/static/media/paralaxbg.9be86c6748a05c4bf46a.jpg",
+    "static/media/dr.sailesh_kumar_samal-removebg-preview.png": "/Dr_Shailesh_Samal_Portfolio/static/media/dr.sailesh_kumar_samal-removebg-preview.02e49b9206ee64139bb8.png",
+    "static/media/crop.jpg": "/Dr_Shailesh_Samal_Portfolio/static/media/crop.c7a1f777334f8fc25dc1.jpg",
+    "static/media/disease.jpeg": "/Dr_Shailesh_Samal_Portfolio/static/media/disease.65f3a2dbdcbd4edc7f09.jpeg",
+    "index.html": "/Dr_Shailesh_Samal_Portfolio/index.html",
+    "main.de0642ee.css.map": "/Dr_Shailesh_Samal_Portfolio/static/css/main.de0642ee.css.map",
+    "main.bcdd0cf1.js.map": "/Dr_Shailesh_Samal_Portfolio/static/js/main.bcdd0cf1.js.map",
+    "488.9561f9b8.chunk.js.map": "/Dr_Shailesh_Samal_Portfolio/static/js/488.9561f9b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c4558ae.css",
-    "static/js/main.d1b5259f.js"
+    "static/css/main.de0642ee.css",
+    "static/js/main.bcdd0cf1.js"
   ]
 }
