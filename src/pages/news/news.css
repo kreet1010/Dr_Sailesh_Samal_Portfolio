@@ -27,10 +27,23 @@
     align-items: center;
 }
 .search-bar input{
+    background-color: rgb(102, 102, 102);
+    border-radius: 20px;
+    width: 90%;
+    color:aliceblue;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(252, 251, 255);
+    font-size: 20px;
+    transition: 0.5s ease;
+    border: transparent;
+}
+.icon{
+    color: rgb(0, 0, 54);
+}
+.search-bar input:hover{
+    width:95%;
+}
+.search-bar input:active{
+    background-color: rgb(0, 0, 54);
 }
 
 .sort-by-section{

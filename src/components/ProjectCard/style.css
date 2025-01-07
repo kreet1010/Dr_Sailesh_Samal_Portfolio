@@ -3,18 +3,19 @@
     flex-direction: row; 
     align-items: center;
     justify-content: space-between;
-    background: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: rgb(129, 180, 238);
+    box-shadow: 0 4px 8px rgba(129, 180, 238,0.75);
     border-radius: 10px;
     margin: 20px 0;
     padding: 20px;
     width:65%;
-    min-width: 400px;
-    transition: transform 0.3s ease;
+    min-width: 350px;
+    transition: 0.5s ease;
   }
   
   .project-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 10px rgba(129, 180, 238,0.75);
   }
   
   .card-content {
@@ -39,7 +40,6 @@
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: #007bff;
     font-weight: bold;
   }
   

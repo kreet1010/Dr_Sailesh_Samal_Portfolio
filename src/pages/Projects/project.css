@@ -29,7 +29,24 @@
     align-items: center; 
 }
 .inp{
-    background-color: rgb(252, 251, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: aliceblue;
+    height:40px;
+}
+.inp input{ 
+    background-color: rgb(102, 102, 102);
+    border-color: rgb(0, 0, 54);
+    border-radius: 20px;
+    width: 60%;
+    font-size: 20px;
+    color:aliceblue;
+    text-align: center;
+    transition: 0.5s ease;
+}
+.inp input:hover{
+    width:64%;
 }
 @media(max-width:680px){
     .projects-container{

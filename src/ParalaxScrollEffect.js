@@ -1,5 +1,5 @@
 import React from "react";
-import dr_samal from "./assets/dr.sailesh_kumar_samal.jpg";
+import dr_samal from "./assets/dr.sailesh_kumar_samal-removebg-preview.png";
 import Navbar from "./components/navbar.js";
 import analysisRprt from "./assets/crop.jpg";
 import "./App.css";
@@ -38,7 +38,7 @@ const ParallaxScrollEffect = () => {
         </div>
         <div className="research">
         <div className="number">999</div>
-          <div className="citation">Total Research Projects</div>
+          <div className="desc">Total Citations</div>
         </div>
       </div>
     </div>

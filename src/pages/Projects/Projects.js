@@ -4,6 +4,8 @@ import project1Image from "../../assets/disease.jpeg";
 import project2Image from "../../assets/medicine.jpeg";
 import Navbar from "../../components/navbar";
 import './project.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const Projects = () => {
   // Step 1: Set up the search state
@@ -47,13 +49,13 @@ const Projects = () => {
         <div className="inp">
           <input
             type="text"
-            placeholder="Search Projects..."
+            placeholder="Search Projects"
             value={searchQuery}
             onChange={handleSearchChange}
             className="search-bar"
           />
+          <FontAwesomeIcon icon={faSearch} className="icon" />
         </div>
-
       </div>
 
 

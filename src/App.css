@@ -3,6 +3,7 @@
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 .landing {
   width: 100%;
@@ -60,12 +61,13 @@
 .display{
   width : 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   flex-basis:1;
-  gap: 2%;
+  gap: 1rem 2%;
   background-color: #f1f1f1;
+  padding-top: 5%;
   margin-bottom: 10%;
   padding-bottom: 5%;
 }
@@ -73,32 +75,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
-  padding: 3% 2rem;
-  background-color: #e7f0ff;
-  border-radius: 60px;
-  min-width:400px;
-  border:#282c34 solid;
+  width:350px;
+  transition: 1s ease;
 }
-
+.img img:hover{
+  background-color: rgb(0,0,54);
+  border-radius: 50%;
+}
 .img img{
   border-radius: 50px;
-  min-width:400px;
+  width: 100%;;
+  transition: .75s ease;
 }
 .research{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 10%;
   margin-left:3%;
   margin-right:3%;
   padding: 3% 1rem;
-  background-color: #e7f0ff;
+  background-color: #81b4ee;
   min-width:400px;
   height:350px;
   border-radius:50px;
-  border:#282c34 solid;
+  
 }
 .number{
   font-size: 120px;
