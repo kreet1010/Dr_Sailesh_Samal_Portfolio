@@ -30,6 +30,17 @@ const ParallaxScrollEffect = () => {
           </p>
         </div>
       </div>
+      <div className="display">
+        <div className="img"><img src={dr_samal}></img></div>
+        <div className="research">
+          <div className="number">999</div>
+          <div className="desc">Total Research Projects</div>
+        </div>
+        <div className="research">
+        <div className="number">999</div>
+          <div className="citation">Total Research Projects</div>
+        </div>
+      </div>
     </div>
   );
 };

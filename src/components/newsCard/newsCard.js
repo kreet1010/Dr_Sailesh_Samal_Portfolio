@@ -4,7 +4,7 @@ import { FaRegNewspaper } from "react-icons/fa";
 
 const NewsCard = ({ title, description, image, githubLink }) => {
     return (
-        <div className="project-card">
+        <div className="news-card">
             <div className="card-image">
                 <img src={image} alt={title} />
             </div>

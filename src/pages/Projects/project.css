@@ -5,11 +5,31 @@
     padding-right: 3%;
     align-items: center;
 }
-
+.project-container input{
+    width: 70%;
+    background-color: rgba(224, 224, 224, 0.123)
+}
 .projects-container h1{
     text-transform: uppercase;
     text-align: center;
     font-family: 'Inter', sans-serif;
+}
+.projs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top-of-page input{
+    background-color: rgba(224, 224, 224, 0.123);
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.inp{
+    background-color: rgb(252, 251, 255);
 }
 @media(max-width:680px){
     .projects-container{

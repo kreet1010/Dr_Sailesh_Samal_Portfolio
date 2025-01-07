@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import project1Image from "../../assets/disease.jpeg";
-import project2Image from "../../assets/medicine.jpeg"; 
+import project2Image from "../../assets/medicine.jpeg";
 import Navbar from "../../components/navbar";
-import './project.css'
+import './project.css';
+
 const Projects = () => {
+  // Step 1: Set up the search state
+  const [searchQuery, setSearchQuery] = useState("");
+
   const projectData = [
     {
       title: "ABC",
@@ -20,26 +24,54 @@ const Projects = () => {
     },
     {
       title: "IJKF",
-      description: " desc.",
+      description: "A short description.",
       image: project2Image,
       githubLink: "https://github.com/username/ecommerce-app",
     },
   ];
 
+  const filteredProjects = projectData.filter((project) =>
+    project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    project.description.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
   return (
-    
     <div className="projects-container">
       <Navbar />
-      <h1>My Projects</h1>
-      {projectData.map((project, index) => (
-        <ProjectCard
-          key={index}
-          title={project.title}
-          description={project.description}
-          image={project.image}
-          githubLink={project.githubLink}
-        />
-      ))}
+      <div className="top-of-page">
+        <h1>My Projects</h1>
+        <div className="inp">
+          <input
+            type="text"
+            placeholder="Search Projects..."
+            value={searchQuery}
+            onChange={handleSearchChange}
+            className="search-bar"
+          />
+        </div>
+
+      </div>
+
+
+      <div className="projs">
+        {filteredProjects.length > 0 ? (
+          filteredProjects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              title={project.title}
+              description={project.description}
+              image={project.image}
+              githubLink={project.githubLink}
+            />
+          ))
+        ) : (
+          <p>No projects found.</p>
+        )}
+      </div>
     </div>
   );
 };

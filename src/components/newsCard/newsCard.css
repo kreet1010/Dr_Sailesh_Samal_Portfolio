@@ -1,4 +1,4 @@
-.project-card {
+.news-card {
     display: flex;
     flex-direction: column;
     min-width:400px;
@@ -16,7 +16,7 @@
     text-align: center;
   }
   
-  .project-card:hover {
+  .news-card:hover {
     transform: translateY(-5px);
   }
   

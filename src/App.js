@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import ParallaxScrollEffect from "./ParalaxScrollEffect";
 import Skills from "./pages/Journey/Skills";
 import Projects from "./pages/Projects/Projects";
@@ -12,11 +12,12 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<ParallaxScrollEffect />} />
+        <Route path="/Dr_Sailesh_Samal_Portfolio" element={<ParallaxScrollEffect />} />
         <Route path="/updates" element={<News />} />
         <Route path="/journey" element={<Skills />} />
         <Route path="/project" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/*" element={<Error404 />} />
+        <Route path="/*" element={<Navigate to="/" replace/>} />
       </Routes>
     </Router>
   );

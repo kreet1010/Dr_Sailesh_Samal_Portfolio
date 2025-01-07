@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <a href="/" className="name">Dr.S.K Samal</a>
+      <a href="/Dr_Sailesh_Samal_Portfolio" className="name">Dr.S.K Samal</a>
       <i className="dropboxMenu" id="menu-icon" onClick={toggleMenu}>☰</i>
 
       <ul id="nav-links" className={isMenuOpen ? 'show' : ''}>

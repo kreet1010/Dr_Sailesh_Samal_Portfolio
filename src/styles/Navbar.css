@@ -29,7 +29,6 @@
   
   .name {
     font-size: 152%;
-    font-family: 'Inter', sans-serif;
     color: rgb(0, 0, 54);
     display: flex;
     font-weight: 600;
@@ -39,7 +38,9 @@
     text-decoration: none;
     width: 35%;
   }
-  
+  .name p{
+    color: rgb(0, 0, 54);
+  }
   .name:hover {
     transform: scale(1.1);
   }
