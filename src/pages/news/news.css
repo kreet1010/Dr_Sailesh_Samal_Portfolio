@@ -25,6 +25,7 @@
     flex-direction: row;
     display: flex;
     align-items: center;
+    color: aliceblue;
 }
 .search-bar input{
     background-color: rgb(102, 102, 102);

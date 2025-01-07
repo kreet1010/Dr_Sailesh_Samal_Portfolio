@@ -85,7 +85,7 @@
 .img img{
   border-radius: 50px;
   width: 100%;;
-  transition: .75s ease;
+  transition: .3s ease;
 }
 .research{
   display: flex;
@@ -96,7 +96,8 @@
   margin-right:3%;
   padding: 3% 1rem;
   background-color: #81b4ee;
-  min-width:400px;
+  width: 95%;
+  min-width:350px;
   height:350px;
   border-radius:50px;
   
