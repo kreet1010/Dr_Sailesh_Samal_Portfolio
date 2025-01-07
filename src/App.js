@@ -10,9 +10,9 @@ import Error404 from "./pages/Error/Error";
 const App = () => {
  
   return (
-    <Router>
+    <Router basename="Dr_Sailesh_Samal_Portfolio">
       <Routes>
-        <Route path="/Dr_Sailesh_Samal_Portfolio/" element={<ParallaxScrollEffect />} />
+        <Route path="/" element={<ParallaxScrollEffect />} />
         <Route path="/updates" element={<News />} />
         <Route path="/journey" element={<Skills />} />
         <Route path="/project" element={<Projects />} />
