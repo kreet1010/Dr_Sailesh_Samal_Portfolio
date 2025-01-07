@@ -22,6 +22,9 @@
 .search{
     width: 60%;
     transition: 0.5 ease;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
 }
 .search-bar input{
     text-align: center;
@@ -42,3 +45,27 @@
     width: 120px;
     background-color: rgb(252, 251, 255);
 }
+
+
+@media screen and (max-width: 500px){
+    .search-bar{
+        flex-direction: column;
+    }
+    .search{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .sort-by-section{
+        width: 100%;
+    }
+    .sort-by select{
+        width: 100%;
+    }
+    
+}
+
+.icon{
+    color: '#888';
+    padding: 10px;
+  }
+

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import NewsCard from "../../components/newsCard/newsCard";
 import Navbar from "../../components/navbar";
 import "./news.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const News = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -116,6 +118,7 @@ const News = () => {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
+          <FontAwesomeIcon icon={faSearch} className="icon" />
         </div>
         <div className="sort-by-section">
           Sort By:
