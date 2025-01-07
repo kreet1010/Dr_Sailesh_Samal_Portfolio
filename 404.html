@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=./index.html" />
+    <script type="text/javascript">
+      // Extract the pathname and redirect to the index.html with the correct hash route
+      var redirectTo = window.location.origin + "/Dr_Sailesh_Samal_Portfolio/index.html" + window.location.pathname + window.location.search;
+      window.location.replace(redirectTo);
+    </script>
   </head>
-  <body></body>
+  <body>
+    <p>Refreshing...</p>
+  </body>
 </html>
