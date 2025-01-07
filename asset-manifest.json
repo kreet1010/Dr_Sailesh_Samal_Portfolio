@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Dr_Sailesh_Samal_Portfolio/static/css/main.6c4558ae.css",
-    "main.js": "/Dr_Sailesh_Samal_Portfolio/static/js/main.0bef1dbc.js",
+    "main.js": "/Dr_Sailesh_Samal_Portfolio/static/js/main.61812a35.js",
     "static/js/488.9561f9b8.chunk.js": "/Dr_Sailesh_Samal_Portfolio/static/js/488.9561f9b8.chunk.js",
     "static/media/medicine.jpeg": "/Dr_Sailesh_Samal_Portfolio/static/media/medicine.243e39be3c4582c3c341.jpeg",
     "static/media/paralaxbg.jpg": "/Dr_Sailesh_Samal_Portfolio/static/media/paralaxbg.9be86c6748a05c4bf46a.jpg",
@@ -10,11 +10,11 @@
     "static/media/disease.jpeg": "/Dr_Sailesh_Samal_Portfolio/static/media/disease.65f3a2dbdcbd4edc7f09.jpeg",
     "index.html": "/Dr_Sailesh_Samal_Portfolio/index.html",
     "main.6c4558ae.css.map": "/Dr_Sailesh_Samal_Portfolio/static/css/main.6c4558ae.css.map",
-    "main.0bef1dbc.js.map": "/Dr_Sailesh_Samal_Portfolio/static/js/main.0bef1dbc.js.map",
+    "main.61812a35.js.map": "/Dr_Sailesh_Samal_Portfolio/static/js/main.61812a35.js.map",
     "488.9561f9b8.chunk.js.map": "/Dr_Sailesh_Samal_Portfolio/static/js/488.9561f9b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6c4558ae.css",
-    "static/js/main.0bef1dbc.js"
+    "static/js/main.61812a35.js"
   ]
 }
