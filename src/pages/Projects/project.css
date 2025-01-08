@@ -36,12 +36,12 @@
     height:40px;
 }
 .inp input{ 
-    background-color: rgb(102, 102, 102);
+    background-color: rgb(202, 202, 202);
     border-color: rgb(0, 0, 54);
     border-radius: 20px;
     width: 60%;
     font-size: 20px;
-    color:aliceblue;
+    color:rgb(0, 0, 54);
     text-align: center;
     transition: 0.5s ease;
 }

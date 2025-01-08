@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Navbar from "../../components/navbar";
+import Navbar from "../../components/navbar/navbar"
 import "./skills.css";
 
 const timelineData = [

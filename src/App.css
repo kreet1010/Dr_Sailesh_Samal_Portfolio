@@ -66,9 +66,8 @@
   flex-wrap: wrap;
   flex-basis:1;
   gap: 1rem 2%;
-  background-color: #f1f1f1;
+  background-color: rgb(241, 249, 255);
   padding-top: 5%;
-  margin-bottom: 10%;
   padding-bottom: 5%;
 }
 .img{

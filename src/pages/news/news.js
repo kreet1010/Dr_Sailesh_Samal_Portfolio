@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NewsCard from "../../components/newsCard/newsCard";
-import Navbar from "../../components/navbar";
+import Navbar from "../../components/navbar/navbar"
 import "./news.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';

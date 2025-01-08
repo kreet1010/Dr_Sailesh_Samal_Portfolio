@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import project1Image from "../../assets/disease.jpeg";
 import project2Image from "../../assets/medicine.jpeg";
-import Navbar from "../../components/navbar";
+import Navbar from "../../components/navbar/navbar"
 import './project.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';

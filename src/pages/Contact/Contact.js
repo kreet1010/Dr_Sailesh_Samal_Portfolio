@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser"; //Powers 200 mails per month on free plan
 import "./style.css";
-import Navbar from "../../components/navbar";
+import Navbar from "../../components/navbar/navbar";
 
 const Contact = () => {
   const [formData, setFormData] = useState({

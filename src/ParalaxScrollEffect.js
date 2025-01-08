@@ -1,6 +1,7 @@
 import React from "react";
 import dr_samal from "./assets/dr.sailesh_kumar_samal-removebg-preview.png";
-import Navbar from "./components/navbar.js";
+import Navbar from "./components/navbar/navbar";
+import Footer from "./components/footer/footer";
 import analysisRprt from "./assets/crop.jpg";
 import "./App.css";
 
@@ -41,6 +42,7 @@ const ParallaxScrollEffect = () => {
           <div className="desc">Total Citations</div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
