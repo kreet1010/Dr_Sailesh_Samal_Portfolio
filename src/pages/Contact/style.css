@@ -34,6 +34,7 @@ body {
     border-radius: 10px;
     flex: 1;
     margin: 10px;
+    min-width: 250px;
   }
   
   .contact-info h2 {
@@ -71,6 +72,7 @@ body {
     padding: 30px;
     border-radius: 10px;
     margin: 10px;
+    min-width: 250px;
   }
   
   .contact-form form {
@@ -129,3 +131,6 @@ body {
     background: #81b4ee;
   }
   
+@media(max-width: 716px){
+
+}

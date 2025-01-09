@@ -6,6 +6,7 @@ import Navbar from "../../components/navbar/navbar"
 import './project.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import Footer from "../../components/footer/footer";
 
 const Projects = () => {
   // Step 1: Set up the search state
@@ -74,6 +75,7 @@ const Projects = () => {
           <p>No projects found.</p>
         )}
       </div>
+      <Footer />
     </div>
   );
 };

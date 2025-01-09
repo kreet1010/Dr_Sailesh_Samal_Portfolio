@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import "./style.css";
+import Footer from "../../components/footer/footer";
 
 const Error404 = () => {
   const navigate = useNavigate();
@@ -24,6 +25,7 @@ const Error404 = () => {
         </button> */}
         <Link to="/" className="go-home-button">Go back to Home</Link>
       </div>
+      <Footer />
     </div>
   );
 };

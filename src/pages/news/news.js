@@ -4,6 +4,7 @@ import Navbar from "../../components/navbar/navbar"
 import "./news.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import Footer from "../../components/footer/footer";
 
 const News = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -147,6 +148,7 @@ const News = () => {
           />
         ))}
       </div>
+      <Footer />
     </div>
   );
 };

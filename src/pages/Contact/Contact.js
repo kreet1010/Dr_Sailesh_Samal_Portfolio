@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser"; //Powers 200 mails per month on free plan
 import "./style.css";
 import Navbar from "../../components/navbar/navbar";
+import Footer from "../../components/footer/footer";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -123,6 +124,7 @@ const Contact = () => {
           {responseMessage && <p>{responseMessage}</p>}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "../../components/navbar/navbar"
 import "./skills.css";
+import Footer from "../../components/footer/footer";
 
 const timelineData = [
   { 
@@ -92,6 +93,7 @@ const Timeline = () => {
           </div>
         ))}
       </div>
+
     </div>
   );
 };
@@ -100,6 +102,7 @@ const App = () => {
   return (
     <div className="app">
       <Timeline />
+      <Footer />
     </div>
   );
 };
