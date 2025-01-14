@@ -1,4 +1,9 @@
-
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
   .footer{
     display: flex;
     flex-direction: column;
@@ -6,7 +11,7 @@
     width: 100%;
     min-height: 550px;
     padding:0;
-    background:linear-gradient( white,#f1f9ff,#81b4ee);
+    background:linear-gradient( white,#f1f9ff,#81b4ee,#81b4ee,#81b4ee);
     overflow: hidden;
     margin-top:10px;
     width:100%;
@@ -22,17 +27,17 @@
   }
   .left{
     width:300px;
-    height: 200px;
+    height:150px;
     display: flex;
     flex-direction: column;
     text-align: left;
-
+    justify-content: baseline;
   }
   .left h1{
     margin-bottom: 5%;
   }
   .left p{
-    margin-top: 2%;
+    margin-top: 0%;
     color: rgb(0,0,54)
   }
   .left a{

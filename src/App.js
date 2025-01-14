@@ -17,7 +17,7 @@ const App = () => {
         <Route path="/Dr_Sailesh_Samal_Portfolio/journey" element={<Skills />} />
         <Route path="/Dr_Sailesh_Samal_Portfolio/project" element={<Projects />} />
         <Route path="/Dr_Sailesh_Samal_Portfolio/contact" element={<Contact />} />
-        </Routes>
+      </Routes>
     </Router>
   );
 };
