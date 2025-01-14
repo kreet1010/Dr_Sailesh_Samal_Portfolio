@@ -1,17 +1,14 @@
-body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
   .contact-container {
     text-align: center;
     padding: 50px 20px;
+    margin: 0;
+    padding: 0;
   }
   
   .contact-container h1 {
     font-size: 36px;
     margin-bottom: 10px;
+    margin-top: 10%;
   }
   
   .contact-container p {

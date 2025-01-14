@@ -1,9 +1,11 @@
 
 .projects-container{
-    margin-top: 10%;
-    padding-left: 3%;
-    padding-right: 3%;
     align-items: center;
+    margin:0;
+    padding: 0;
+}
+.projects-container h1{
+    margin-top: 10%;
 }
 .project-container input{
     width: 70%;
