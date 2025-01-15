@@ -78,7 +78,6 @@ const Timeline = () => {
 
   return (
     <div className="timeline-container">
-      <Navbar />
       <h1 className="timeline-title">Life Timeline</h1>
       <div className="timeline">
         {timelineData.map((event, index) => (
@@ -102,7 +101,6 @@ const App = () => {
   return (
     <div className="app">
       <Timeline />
-      <Footer />
     </div>
   );
 };

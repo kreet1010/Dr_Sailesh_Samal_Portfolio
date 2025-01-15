@@ -1,0 +1,11 @@
+svg {
+    display: block;
+    margin: auto;
+    border: 0;
+  }
+  
+  path:hover {
+    opacity: 0;
+    cursor: pointer;
+  }
+  

@@ -16,7 +16,7 @@ const Navbar = () => {
 
       <ul id="nav-links" className={isMenuOpen ? 'show' : ''}>
         <li className="list"><Link to="/Dr_Sailesh_Samal_Portfolio/updates">Updates</Link></li>
-        <li className="list"><Link to="/Dr_Sailesh_Samal_Portfolio/journey">Journey</Link></li>
+        <li className="list"><Link to="/Dr_Sailesh_Samal_Portfolio/blog">Blog</Link></li>
         <li className="list"><Link to="/Dr_Sailesh_Samal_Portfolio/project">Project</Link></li>
         <li className="list"><Link to="/Dr_Sailesh_Samal_Portfolio/contact">Contact</Link></li>
       </ul>

@@ -44,7 +44,9 @@
   .name:hover {
     transform: scale(1.1);
   }
-  
+  .navbar a{
+    color: rgb(0, 0, 54);
+  }
   .navbar ul {
     font-size: 140%;
     font-family: 'Inter', sans-serif;

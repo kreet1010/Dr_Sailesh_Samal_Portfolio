@@ -14,7 +14,7 @@ const App = () => {
       <Routes>
         <Route path="/Dr_Sailesh_Samal_Portfolio/" element={<ParallaxScrollEffect />} />
         <Route path="/Dr_Sailesh_Samal_Portfolio/updates" element={<News />} />
-        <Route path="/Dr_Sailesh_Samal_Portfolio/journey" element={<Skills />} />
+        <Route path="/Dr_Sailesh_Samal_Portfolio/blog" element={<Skills />} />
         <Route path="/Dr_Sailesh_Samal_Portfolio/project" element={<Projects />} />
         <Route path="/Dr_Sailesh_Samal_Portfolio/contact" element={<Contact />} />
       </Routes>
