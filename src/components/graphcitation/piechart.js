@@ -1,76 +1,131 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import * as d3 from "d3";
 
-const PieChart = ({ data, width = 300, height = 300 }) => {
+const CitationsLineChart = ({ data }) => {
   const svgRef = useRef();
+  const wrapperRef = useRef();
+  const [dimensions, setDimensions] = useState({ width: 700, height: 300 });
 
   useEffect(() => {
-    // Set up dimensions
-    const radius = Math.min(width, height) / 2;
+    const handleResize = () => {
+      const { offsetWidth } = wrapperRef.current || {};
+      if (offsetWidth) {
+        setDimensions({ width: offsetWidth, height: 300 });
+      }
+    };
 
-    // Create color scale
-    const color = d3.scaleOrdinal()
-      .domain(data.map(d => d.name))
-      .range(d3.schemeCategory10);
+    // Add resize listener
+    handleResize(); // Set initial dimensions
+    window.addEventListener("resize", handleResize);
 
-    // Create pie generator
-    const pie = d3.pie()
-      .value(d => d.value);
+    return () => {
+      // Cleanup listener on unmount
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
-    // Create arc generator for the pie slices
-    const arc = d3.arc()
-      .innerRadius(0) // Full pie chart
-      .outerRadius(radius);
+  useEffect(() => {
+    const { width, height } = dimensions;
 
-    // Create arc generator for label positioning
-    const labelArc = d3.arc()
-      .innerRadius(radius + 20) // Position labels slightly outside the pie
-      .outerRadius(radius + 20);
+    // Define margins and dimensions
+    const margin = { top: 20, right: 30, bottom: 50, left: 65 };
+    const innerWidth = width - margin.left - margin.right;
+    const innerHeight = height - margin.top - margin.bottom;
 
-    // Select SVG and set dimensions
-    const svg = d3.select(svgRef.current)
+    // Clear previous content
+    const svg = d3.select(svgRef.current);
+    svg.selectAll("*").remove();
+
+    // Create the main group element
+    const g = svg
       .attr("width", width)
       .attr("height", height)
       .append("g")
-      .attr("transform", `translate(${width / 2}, ${height / 2})`);
+      .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
-    // Clear previous content
-    svg.selectAll("*").remove();
+    // Define scales
+    const xScale = d3
+      .scaleLinear()
+      .domain(d3.extent(data, (d) => d.year))
+      .range([0, innerWidth]);
 
-    // Bind data and create pie chart
-    const arcs = pie(data);
-    svg.selectAll("path")
-      .data(arcs)
-      .join("path")
-      .attr("d", arc)
-      .attr("fill", d => color(d.data.name))
+    const yScale = d3
+      .scaleLinear()
+      .domain([0, d3.max(data, (d) => d.citations)])
+      .nice()
+      .range([innerHeight, 0]);
 
-    // Add labels outside the pie chart
-    svg.selectAll("text")
-      .data(arcs)
-      .join("text")
-      .attr("transform", d => `translate(${labelArc.centroid(d)})`) // Position outside
-      .attr("text-anchor", d => (d.endAngle + d.startAngle) / 2 > Math.PI ? "end" : "start") // Adjust text alignment
-      .attr("font-size", "12px")
-      .attr("fill", "black")
-      .text(d => `${d.data.name} (${d.data.value})`);
+    // Create and add the x-axis
+    g.append("g")
+      .attr("transform", `translate(0, ${innerHeight})`)
+      .call(d3.axisBottom(xScale).ticks(data.length).tickFormat(d3.format("d")))
+      .selectAll("text")
+      .attr("transform", "rotate(45)")
+      .style("text-anchor", "start");
 
-    // Add optional leader lines connecting slices to labels
-    svg.selectAll("polyline")
-      .data(arcs)
-      .join("polyline")
-      .attr("points", d => {
-        const pos = labelArc.centroid(d);
-        const midAngle = (d.startAngle + d.endAngle) / 2;
-        const lineEnd = arc.centroid(d); // Position inside the slice
-        return [lineEnd, pos];
-      })
-      .attr("stroke", "black")
+    // Create and add the y-axis
+    g.append("g").call(d3.axisLeft(yScale));
+
+    // Create the line generator
+    const line = d3
+      .line()
+      .x((d) => xScale(d.year))
+      .y((d) => yScale(d.citations))
+      .curve(d3.curveMonotoneX);
+
+    // Add the line path
+    g.append("path")
+      .datum(data)
+      .attr("fill", "none")
+      .attr("stroke", "#69b3a2")
       .attr("stroke-width", 2)
-      .attr("fill", "none");
-  }, [data, width, height]);
+      .attr("d", line);
 
-  return <svg ref={svgRef}></svg>;
+    // Add data points as circles
+    g.selectAll("circle")
+      .data(data)
+      .join("circle")
+      .attr("cx", (d) => xScale(d.year))
+      .attr("cy", (d) => yScale(d.citations))
+      .attr("r", 4)
+      .attr("fill", "blue");
+
+    // Add labels
+    g.selectAll("text.label")
+      .data(data)
+      .join("text")
+      .attr("class", "label")
+      .attr("x", (d) => xScale(d.year))
+      .attr("y", (d) => yScale(d.citations) - 10)
+      .attr("text-anchor", "middle")
+      .attr("fill", "black")
+      .attr("font-size", "12px")
+      .text((d) => d.citations);
+
+    // Add axes labels
+    g.append("text")
+      .attr("x", innerWidth / 2)
+      .attr("y", innerHeight + 40)
+      .attr("text-anchor", "middle")
+      .attr("fill", "black")
+      .attr("font-size", "16px")
+      .text("Year");
+
+    g.append("text")
+      .attr("x", -innerHeight / 2)
+      .attr("y", -50)
+      .attr("text-anchor", "middle")
+      .attr("fill", "black")
+      .attr("transform", "rotate(-90)")
+      .attr("font-size", "16px")
+      .text("Citations");
+  }, [data, dimensions]);
+
+  return (
+    <div ref={wrapperRef} style={{ width: "90%", height: "90%" }}>
+      <svg ref={svgRef}></svg>
+    </div>
+  );
 };
 
-export default PieChart;
+export default CitationsLineChart;

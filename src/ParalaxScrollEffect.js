@@ -8,14 +8,14 @@ import "./App.css";
 
 const ParallaxScrollEffect = () => {
   const data1 = [
-    {name: "2018", value: 11},
-    {name: "2019", value: 9},
-    {name: "2020", value: 23},
-    {name: "2021", value: 27},
-    {name: "2022", value: 46},
-    {name: "2023", value: 104},
-    {name: "2024", value: 172},
-    {name: "2025", value: 22},
+    { year: 2018, citations: 11 },
+    { year: 2019, citations: 9 },
+    { year: 2020, citations: 23 },
+    { year: 2021, citations: 27 },
+    { year: 2022, citations: 46 },
+    { year: 2023, citations: 104 },
+    { year: 2024, citations: 172 },
+    { year: 2025, citations: 22 },
   ];
   return (
     <div className="landing">
@@ -61,8 +61,7 @@ const ParallaxScrollEffect = () => {
             <div className="desc">Total Research Projects</div>
           </div>
           <div className="research-odd">
-            <div className="number"><PieChart data={data1} width={200} height={200} /></div>
-            <div className="desc">Citations</div>
+            <div className="number"><PieChart data={data1} /></div>
           </div>
           <div className="research-odd">
             <div className="number">452</div>
