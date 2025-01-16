@@ -100,7 +100,7 @@
 }
 .section2{
   width : 100%;
-  background: linear-gradient(#f1f9ff,white);
+  background: white;
   display: flex;
   flex-direction: column ;
   justify-content: center;
@@ -128,11 +128,15 @@
   margin-left:3%;
   margin-right:3%;
   padding: 0;
-  background-color: #81b4ee;
+  background-color: #cae8ff;
   width: 550px;
   min-width:550px;
   height:350px;
   border-radius:50px; 
+  transition: 0.5s ease;
+}
+.research-even:hover, .research-odd:hover{
+  box-shadow: 0 8px 10px rgba(129, 180, 238,0.75);
 }
 .number , .desc{
   color:rgb(0,0,54);
@@ -151,11 +155,12 @@
   margin-left:3%;
   margin-right:3%;
   padding: 3% 1rem;
-  background-color: #81b4ee;
+  background-color: #cae8ff;
   width: 350px;
   min-width:350px;
   height:350px;
   border-radius:50px; 
+  transition: 0.5s ease;
 }
 .number{
   font-size: 120px;

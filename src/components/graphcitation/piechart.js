@@ -91,7 +91,7 @@ const CitationsLineChart = ({ data }) => {
     g.append("path")
       .datum(data)
       .attr("fill", "none")
-      .attr("stroke", "#f1f9ff")
+      .attr("stroke", "#81b4ee")
       .attr("stroke-width", 5)
       .attr("d", line);
 
@@ -142,7 +142,7 @@ const CitationsLineChart = ({ data }) => {
       .attr("y", (d) => yScale(d.citations) - 10)
       .attr("text-anchor", "middle")
       .attr("fill", "black")
-      .attr("font-size", "14px")
+      .attr("font-size", "16px")
       .text((d) => d.citations);
 
     // Add axes labels
