@@ -5,7 +5,7 @@
     justify-content: space-between;
     background: rgb(241, 249, 255);
     box-shadow: 0 4px 8px rgba(241, 249, 255);
-    border-left: 1rem solid;
+    border-left: 1rem solid rgb(0,0,54);
     border-radius: 10px;
     margin: 20px 0;
     padding: 20px;

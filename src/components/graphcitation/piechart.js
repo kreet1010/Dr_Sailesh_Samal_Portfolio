@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import * as d3 from "d3";
+import "./pie.css"
 
 const CitationsLineChart = ({ data }) => {
   const svgRef = useRef();
@@ -14,12 +15,10 @@ const CitationsLineChart = ({ data }) => {
       }
     };
 
-    // Add resize listener
     handleResize(); // Set initial dimensions
     window.addEventListener("resize", handleResize);
 
     return () => {
-      // Cleanup listener on unmount
       window.removeEventListener("resize", handleResize);
     };
   }, []);
@@ -28,7 +27,7 @@ const CitationsLineChart = ({ data }) => {
     const { width, height } = dimensions;
 
     // Define margins and dimensions
-    const margin = { top: 20, right: 30, bottom: 50, left: 65 };
+    const margin = { top: 20, right: 30, bottom: 50, left: 80 };
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
 
@@ -42,6 +41,20 @@ const CitationsLineChart = ({ data }) => {
       .attr("height", height)
       .append("g")
       .attr("transform", `translate(${margin.left}, ${margin.top})`);
+
+    // Tooltip div
+    const tooltip = d3
+    .select(wrapperRef.current)
+    .append("div")
+    .style("position", "absolute")
+    .style("background", "#fff")
+    .style("border", "1px solid #ccc")
+    .style("border-radius", "3px") // Reduced border-radius for a smaller appearance
+    .style("padding", "3px 6px") // Smaller padding
+    .style("font-size", "25px") // Smaller font size
+    .style("box-shadow", "0px 2px 5px rgba(0, 0, 0, 0.2)")
+    .style("opacity", 0) // Start hidden
+    .style("transition", "opacity 0.3s ease");
 
     // Define scales
     const xScale = d3
@@ -61,6 +74,7 @@ const CitationsLineChart = ({ data }) => {
       .call(d3.axisBottom(xScale).ticks(data.length).tickFormat(d3.format("d")))
       .selectAll("text")
       .attr("transform", "rotate(45)")
+      .attr("stroke-width", 3)
       .style("text-anchor", "start");
 
     // Create and add the y-axis
@@ -77,18 +91,47 @@ const CitationsLineChart = ({ data }) => {
     g.append("path")
       .datum(data)
       .attr("fill", "none")
-      .attr("stroke", "#69b3a2")
-      .attr("stroke-width", 2)
+      .attr("stroke", "#f1f9ff")
+      .attr("stroke-width", 5)
       .attr("d", line);
 
-    // Add data points as circles
+    // Add data points as circles with hover effects
     g.selectAll("circle")
       .data(data)
       .join("circle")
       .attr("cx", (d) => xScale(d.year))
       .attr("cy", (d) => yScale(d.citations))
       .attr("r", 4)
-      .attr("fill", "blue");
+      .attr("fill", "#000036")
+      .on("mouseover", (event, d) => {
+        tooltip
+          .style("opacity", 1) // Fade in
+          .html(`<strong>Year:</strong> ${d.year}<br/><strong>Citations:</strong> ${d.citations}`)
+          .style("left", `${event.pageX + 10}px`)
+          .style("top", `${event.pageY - 20}px`);
+
+        // Enlarge the circle smoothly
+        d3.select(event.target)
+          .transition()
+          .duration(200)
+          .attr("r", 8)
+          .attr("fill", "orange");
+      })
+      .on("mousemove", (event) => {
+        tooltip
+          .style("left", `${event.pageX + 10}px`)
+          .style("top", `${event.pageY - 20}px`);
+      })
+      .on("mouseout", (event) => {
+        tooltip.style("opacity", 0); // Fade out
+
+        // Shrink the circle back smoothly
+        d3.select(event.target)
+          .transition()
+          .duration(200)
+          .attr("r", 4)
+          .attr("fill", "#000036");
+      });
 
     // Add labels
     g.selectAll("text.label")
@@ -99,7 +142,7 @@ const CitationsLineChart = ({ data }) => {
       .attr("y", (d) => yScale(d.citations) - 10)
       .attr("text-anchor", "middle")
       .attr("fill", "black")
-      .attr("font-size", "12px")
+      .attr("font-size", "14px")
       .text((d) => d.citations);
 
     // Add axes labels
@@ -108,7 +151,7 @@ const CitationsLineChart = ({ data }) => {
       .attr("y", innerHeight + 40)
       .attr("text-anchor", "middle")
       .attr("fill", "black")
-      .attr("font-size", "16px")
+      .attr("font-size", "25px")
       .text("Year");
 
     g.append("text")
@@ -117,12 +160,16 @@ const CitationsLineChart = ({ data }) => {
       .attr("text-anchor", "middle")
       .attr("fill", "black")
       .attr("transform", "rotate(-90)")
-      .attr("font-size", "16px")
+      .attr("font-size", "25px")
       .text("Citations");
+
+    return () => {
+      tooltip.remove();
+    };
   }, [data, dimensions]);
 
   return (
-    <div ref={wrapperRef} style={{ width: "90%", height: "90%" }}>
+    <div className="graph"ref={wrapperRef} style={{ width: "90%", height: "90%" }}>
       <svg ref={svgRef}></svg>
     </div>
   );

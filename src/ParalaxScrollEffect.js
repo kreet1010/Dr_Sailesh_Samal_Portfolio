@@ -61,11 +61,11 @@ const ParallaxScrollEffect = () => {
             <div className="desc">Total Research Projects</div>
           </div>
           <div className="research-odd">
-            <div className="number"><PieChart data={data1} /></div>
-          </div>
-          <div className="research-odd">
             <div className="number">452</div>
             <div className="desc">Total Citations</div>
+          </div>
+          <div className="research-odd">
+            <div className="number"><PieChart data={data1} /></div>
           </div>
           <div className="research-even">
             <div className="number">452</div>
