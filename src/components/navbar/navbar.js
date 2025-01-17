@@ -15,10 +15,10 @@ const Navbar = () => {
       <i className="dropboxMenu" id="menu-icon" onClick={toggleMenu}>☰</i>
 
       <ul id="nav-links" className={isMenuOpen ? 'show' : ''}>
-        <li className="list"><Link to="/Dr_Sailesh_Samal_Portfolio/updates">Updates</Link></li>
-        <li className="list"><Link to="/Dr_Sailesh_Samal_Portfolio/blog">Blog</Link></li>
-        <li className="list"><Link to="/Dr_Sailesh_Samal_Portfolio/project">Project</Link></li>
-        <li className="list"><Link to="/Dr_Sailesh_Samal_Portfolio/contact">Contact</Link></li>
+        <li className="list"><Link to="/updates">Updates</Link></li>
+        <li className="list"><Link to="/blog">Blog</Link></li>
+        <li className="list"><Link to="/project">Project</Link></li>
+        <li className="list"><Link to="/contact">Contact</Link></li>
       </ul>
     </nav>
   );

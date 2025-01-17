@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import ParallaxScrollEffect from "./ParalaxScrollEffect";
 import Skills from "./pages/Journey/Skills";
 import Projects from "./pages/Projects/Projects";
@@ -12,11 +12,11 @@ const App = () => {
   return (
     <Router >
       <Routes>
-        <Route path="/Dr_Sailesh_Samal_Portfolio/" element={<ParallaxScrollEffect />} />
-        <Route path="/Dr_Sailesh_Samal_Portfolio/updates" element={<News />} />
-        <Route path="/Dr_Sailesh_Samal_Portfolio/blog" element={<Skills />} />
-        <Route path="/Dr_Sailesh_Samal_Portfolio/project" element={<Projects />} />
-        <Route path="/Dr_Sailesh_Samal_Portfolio/contact" element={<Contact />} />
+        <Route path="/" element={<ParallaxScrollEffect />} />
+        <Route path="/updates" element={<News />} />
+        <Route path="/blog" element={<Skills />} />
+        <Route path="/project" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
