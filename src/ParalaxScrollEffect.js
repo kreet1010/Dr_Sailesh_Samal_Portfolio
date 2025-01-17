@@ -57,12 +57,20 @@ const ParallaxScrollEffect = () => {
       <div className="section2">
         <div className="display">
           <div className="research-even">
-            <div className="number">999</div>
+            <div className="number">59</div>
             <div className="desc">Total Research Projects</div>
           </div>
           <div className="research-odd">
-            <div className="number">452</div>
-            <div className="desc">Total Citations</div>
+            <div className="top-research">
+              <h3>Top Paper</h3>
+              <p>Emerging trends in advanced translational applications of silver nanoparticles: a progressing dawn of nanotechnology</p>
+            </div>
+            <div className="research-index">
+              <h1>h-index: 12</h1>
+              <p></p>
+              <h1>i10-index: 16</h1>
+            </div>
+            <div className="desc">Research Stats</div>
           </div>
           <div className="research-odd">
             <div className="number"><PieChart data={data1} /></div>

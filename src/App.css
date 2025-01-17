@@ -171,7 +171,23 @@
   font-size: 30px;
   font-weight: 200;
 }
-
+.top-research{
+  text-align: center;
+  font-size: 25px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.top-research h1{
+  margin-bottom: 20px;
+}
+.research-index{
+  display: flex;
+  gap:15px;
+  
+}
+.research-index h1{
+  font-size: 25px;
+}
 .section3{
   padding-left:20px;
   padding-right: 20px;
