@@ -3,7 +3,7 @@
     padding: 50px 20px;
     margin: 0;
     padding: 0;
-    color:white;
+    color: var(--emphasis);
   }
   
   .contact-container h1 {
@@ -29,8 +29,7 @@
   }
   
   .contact-info {
-    background: rgb(0,0,54);
-    color: white;
+    background: var(--hilight);
     padding: 30px;
     border-radius: 10px;
     flex: 1;
@@ -40,39 +39,43 @@
   
   .contact-info h2 {
     font-size: 24px;
+    font-weight: 600;
     margin-bottom: 10px;
+    color: whitesmoke;
   }
   
   .contact-info ul {
     list-style: none;
     padding: 0;
   }
-  
+  .contact-info p{
+    color: whitesmoke;
+  }
   .contact-info ul li {
     margin: 10px 0;
     font-size: 16px;
-    color: white;
+    color: whitesmoke;
   }
   
   .contact-info ul li i {
     margin-right: 10px;
-    color: white;
+    color: whitesmoke;
   }
   
   .social-icons {
     margin-top: 20px;
-    color: white;
   }
   
   .social-icons a {
-    color: white;
+    color: whitesmoke;
     margin: 0 10px;
     font-size: 20px;
   }
   
   .contact-form {
     flex: 2;
-    background: #f5f5f5;
+    background:linear-gradient(#EDF4C2,#E7D283);
+
     padding: 30px;
     border-radius: 10px;
     margin: 10px;
@@ -105,9 +108,10 @@
   textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 0px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
+    background-color: white;
   }
   
   textarea {
@@ -121,7 +125,7 @@
   }
   
   button {
-    background: rgb(0,0,54);
+    background-color: var(--hilight);
     color: white;
     padding: 15px;
     border: none;
@@ -132,9 +136,6 @@
   }
   
   button:hover {
-    background: #81b4ee;
+    background: var(--emphasis);
   }
   
-@media(max-width: 716px){
-
-}

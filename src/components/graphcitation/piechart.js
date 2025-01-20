@@ -92,7 +92,7 @@ const CitationsLineChart = ({ data }) => {
     g.append("path")
       .datum(data)
       .attr("fill", "none")
-      .attr("stroke", "#81b4ee")
+      .attr("stroke", "#DF9755")
       .attr("stroke-width", 5)
       .attr("d", line);
 
@@ -140,7 +140,7 @@ const CitationsLineChart = ({ data }) => {
       .attr("x", (d) => xScale(d.year))
       .attr("y", (d) => yScale(d.citations) - 10)
       .attr("text-anchor", "middle")
-      .attr("fill", "black")
+      .attr("fill", "#000036")
       .attr("font-size", "16px")
       .text((d) => d.citations);
 
@@ -149,7 +149,7 @@ const CitationsLineChart = ({ data }) => {
       .attr("x", innerWidth / 2)
       .attr("y", innerHeight + 40)
       .attr("text-anchor", "middle")
-      .attr("fill", "black")
+      .attr("fill", "#eb5a3d")
       .attr("font-size", "25px")
       .text("Year");
 
@@ -157,7 +157,7 @@ const CitationsLineChart = ({ data }) => {
       .attr("x", -innerHeight / 2)
       .attr("y", -50)
       .attr("text-anchor", "middle")
-      .attr("fill", "black")
+      .attr("fill", "#eb5a3d")
       .attr("transform", "rotate(-90)")
       .attr("font-size", "25px")
       .text("Citations");

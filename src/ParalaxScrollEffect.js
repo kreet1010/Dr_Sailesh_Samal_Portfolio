@@ -33,15 +33,13 @@ const ParallaxScrollEffect = () => {
 
 
       <div className="section1">
-        <div className="head">
-          <h1>About</h1>
-        </div>
         <div className="about">
           <div className="text">
+            <h1>About</h1>
             <p>
               Dr. Shailesh Kumar Samal is a distinguished scientist, accomplished entrepreneur, and innovator in the field of medical research. With an illustrious career spanning groundbreaking research, entrepreneurial ventures, and collaborations with some of the most celebrated minds in science, Dr. Samal has dedicated his life to transforming healthcare solutions for chronic inflammatory conditions.
-              Holding dual PhDs from Karolinska Institutet, Sweden, and Maastricht University, Netherlands, Dr. Samal’s academic excellence is complemented by his entrepreneurial spirit.
-              As the CEO of Inflanova AB, he spearheads efforts to develop cutting-edge vaccines and diagnostic tools, setting new benchmarks in medical science.
+              Holding dual PhDs from <a href="https://ki.se/en">Karolinska Institutet</a>, Sweden, and <a href="https://www.maastrichtuniversity.nl/">Maastricht University</a>, Netherlands, Dr. Samal’s academic excellence is complemented by his entrepreneurial spirit.
+              As the CEO of <a href="https://inflanova.com/">Inflanova AB</a>, he spearheads efforts to develop cutting-edge vaccines and diagnostic tools, setting new benchmarks in medical science.
               His work on anti-PC (anti-phosphorylcholine) has been internationally lauded.
               <p>Through this platform, explore Dr. Samal’s journey of innovation, scientific achievements, and his unwavering commitment to improving global health.</p>
             </p>
@@ -89,15 +87,15 @@ const ParallaxScrollEffect = () => {
             </p>
           </div>
           <div className="text-align-center">
-            <p>During his undergraduate studies, Dr. Samal moved to the USA on an NIH fellowship, where he had the opportunity to work under the guidance of the legendary Nobel Laureate Prof. Oliver Smithies. This experience was pivotal in shaping his scientific career and igniting his passion for research.
+            <p>During his undergraduate studies, Dr. Samal moved to the USA on an NIH fellowship, where he had the opportunity to work under the guidance of the legendary Nobel Laureate <a href="https://en.wikipedia.org/wiki/Oliver_Smithies">Prof. Oliver Smithies</a>. This experience was pivotal in shaping his scientific career and igniting his passion for research.
             </p>
           </div>
           <div className="text-align-center">
-            <p>Further advancing his education, Dr. Samal went to University of Porto, Portugal as an Erasmus Mundus Master's student, further broadening his horizons and deepening his expertise in medical research.
+            <p>Further advancing his education, Dr. Samal went to <a href="https://www.up.pt/portal/en/">University of Porto</a>, Portugal as an Erasmus Mundus Master's student, further broadening his horizons and deepening his expertise in medical research.
             </p>
           </div>
           <div className="text-align-center">
-            <p>Dr. Samal’s dedication to knowledge led him to pursue not one but two PhDs: one in Medical Sciences from Karolinska Institutet, Sweden, and another in Biochemistry from Maastricht University, Netherlands. His relentless pursuit of excellence earned him prestigious fellowships, including the NIH fellowship and the Marie Curie-IntraCare fellowship, both of which were instrumental in shaping his global scientific journey.
+            <p>Dr. Samal’s dedication to knowledge led him to pursue not one but two PhDs: one in Medical Sciences from <a href="https://ki.se/en">Karolinska Institutet</a>, Sweden, and another in Biochemistry from <a href="https://www.maastrichtuniversity.nl/">Maastricht University</a>, Netherlands. His relentless pursuit of excellence earned him prestigious fellowships, including the NIH fellowship and the Marie Curie-IntraCare fellowship, both of which were instrumental in shaping his global scientific journey.
             </p>
           </div>
           <div className="text-align-center">
@@ -105,7 +103,7 @@ const ParallaxScrollEffect = () => {
             </p>
           </div>
           <div className="text-align-center">
-            <p>Dr. Shailesh Kumar Samal's scientific journey took another transformative turn when he co-founded Inflanova AB, a company focused on the development of innovative vaccines and diagnostic solutions for chronic inflammatory conditions. His vast experience, honed through his work with Nobel Laureates and world-renowned institutions, equipped him with the expertise to lead groundbreaking research in this critical area.
+            <p>Dr. Shailesh Kumar Samal's scientific journey took another transformative turn when he co-founded <a href="https://inflanova.com/">Inflanova AB</a>, a company focused on the development of innovative vaccines and diagnostic solutions for chronic inflammatory conditions. His vast experience, honed through his work with Nobel Laureates and world-renowned institutions, equipped him with the expertise to lead groundbreaking research in this critical area.
             </p>
           </div>
           <div className="text-align-center">

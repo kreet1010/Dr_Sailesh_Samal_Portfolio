@@ -29,23 +29,20 @@
   
   .name {
     font-size: 152%;
-    color: rgb(0, 0, 54);
     display: flex;
     font-weight: 600;
     cursor: pointer;
     transition: 0.5s ease;
-    color: var(--txt-clr);
+    color: black;
     text-decoration: none;
     width: 35%;
   }
-  .name p{
-    color: rgb(0, 0, 54);
-  }
   .name:hover {
     transform: scale(1.1);
+    color: var(--hilight);
   }
   .navbar a{
-    color: rgb(0, 0, 54);
+    color: black;
   }
   .navbar ul {
     font-size: 140%;
@@ -62,7 +59,7 @@
   }
   
   .navbar ul a {
-    color: rgb(0, 0, 54);
+    color: black;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 300;
@@ -71,9 +68,9 @@
   }
   
   .navbar ul a:hover {
-    color:rgb(56, 56, 56);
+    color: var(--hilight);
     letter-spacing: 2px;
-    border-bottom: 3px solid rgb(56, 56, 56);
+    border-bottom: 3px solid var(--hilight);
   }
   
   .getsession {

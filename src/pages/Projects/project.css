@@ -6,6 +6,7 @@
 }
 .projects-container h1{
     margin-top: 10%;
+    color: var(--emphasis);
 }
 .project-container input{
     width: 70%;
@@ -38,7 +39,7 @@
     height:50px;
 }
 .inp input{ 
-    background-color: rgb(202, 202, 202);
+    background-color: rgb(190, 190, 190);
     border-color: rgb(0, 0, 54);
     border-radius: 20px;
     height: 40px;

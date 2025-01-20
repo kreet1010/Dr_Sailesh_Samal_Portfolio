@@ -4,17 +4,23 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-  .footer{
+.footer{
+  display: flex;
+  justify-content: end;
+  align-items: baseline;
+  width: 100%;
+}
+  .footer-display{
     display: flex;
     flex-direction: column;
     position: relative;
+    height:100%;
     width: 100%;
     min-height: 550px;
     padding:0;
     background:linear-gradient( white,#f1f9ff,#81b4ee,#81b4ee,#81b4ee);
     overflow: hidden;
     margin-top:10px;
-    width:100%;
   }
 
   .description{

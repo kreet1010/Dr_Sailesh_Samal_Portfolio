@@ -15,6 +15,7 @@
     justify-content: space-between;
     align-items: center; 
     padding-left: 5%;
+    
 }
 .search::after{
     transform: translateY(-5%);
@@ -27,9 +28,10 @@
     display: flex;
     align-items: center;
     color: aliceblue;
+    
 }
 .search-bar input{
-    background-color: rgb(202, 202, 202);
+    background-color: rgb(190, 190, 190);
     border-radius: 20px;
     width: 90%;
     color:rgb(0, 0, 54);
@@ -39,7 +41,7 @@
     border: transparent;
 }
 .icon{
-    color: rgb(0, 0, 54);
+    color: var(--hilight);
 }
 .search-bar input:hover{
     width:95%;
