@@ -87,8 +87,8 @@
   padding-left: 0%;
   padding-right: 0%;
   padding-bottom: 2%;
-  font-size: 25px;
-  text-align: left;
+  font-size: 20px;
+  text-align: center;
   width: 55%;
   min-width: 700px;
 }
@@ -198,7 +198,7 @@
 
 .top-research {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -231,9 +231,11 @@
 }
 
 .text-align-center {
-  text-align: start;
+  text-align: center;
 }
-
+.timeline{
+  height:100%;
+}
 .intro {
   width: 50%;
   min-width: 650px;
