@@ -16,15 +16,9 @@ const Footer = () => {
                     </div>
                     <div className="right"> To connect with Dr. Shailesh Kumar samal <Link to="/Dr_Sailesh_Samal_Portfolio/contact">Click Here!</Link> </div>
                 </div>
-            <section>
-                <div className='air air1'></div>
-                <div className='air air2'></div>
-                <div className='air air3'></div>
-                <div className='air air4'></div>
                 <div className="copyright">
                     <p>© 2025 Kreet Rout | All Rights Reserved.</p>
                 </div>
-            </section>
         </nav>
     );
 };
